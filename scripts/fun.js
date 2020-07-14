@@ -7,20 +7,20 @@ const system = server.registerSystem(0, 0);
 const foo = {
     "marco" : "polo",
     "lol" : "Whats so funny",
-    "Hongyi is handsome" : "He is super handsome",
-    "Hongyi is ugly" : "Your mom is ugly",
-    "Who is Candice" : "Candice d**k fit in your mouth?",
-    "who is candice" : "Candice d**k fit in your mouth?",
-    "Who is candice" : "Candice d**k fit in your mouth?",
-    "who is Candice" : "Candice d**k fit in your mouth?",
-    "here come dat boi" : "oh sh*t waddup!"
+    "hi" : "Hello :)",
+    "hey" : "Hai :)",
+    "bye" : "Wait don't go :c",
+    "kaludi" : "Who dare spekt thy name",
+    "wolf" : "ew",
+    "shoe" : "a shoe",
+    "bot" : "That's me. :)"
 };
 
 onChat( ({ content }) => {
     if (content in foo) {
         const rawText = {
             rawtext : [{
-                text : "<§eInto§6CMD§r> " + foo[content]
+                text : "<§dProtectorsCraft§r>§b " + foo[content]
             }]
         };
         system.executeCommand(`tellraw @a ${JSON.stringify(rawText)}`, () => {});

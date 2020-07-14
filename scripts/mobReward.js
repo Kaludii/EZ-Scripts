@@ -33,22 +33,22 @@ let LootPercentage = 5
 system.listenForEvent("minecraft:entity_death", ({data: eventData}) => {
 	//customize how much money should a mob drop (min, max)
 	const mobs = {
-		"zombie" : randomReward(1,1),
-		"zombie_villager_v2" : randomReward(1,1),
-		"husk" : randomReward(1,1),
-		"skeleton" : randomReward(1,1),
+		"zombie" : randomReward(10,15),
+		"zombie_villager_v2" : randomReward(14,20),
+		"husk" : randomReward(5,8),
+		"skeleton" : randomReward(7,9),
 		"stray" : randomReward(1,1),
-		"creeper" : randomReward(1,1),
-		"spider" : randomReward(1,1),
-		"cave_spider" : randomReward(1,1),
-		"witch" : randomReward(2,3),
-		"phantom" : randomReward(1,2),
-		"blaze" : randomReward(2,2),
-		"ghast" : randomReward(3,3),
-		"ender_dragon" : randomReward(200,200),
-		"piglin" : randomReward(1,3),
-		"zoglin" : randomReward(2,5),
-		"player" : randomReward(1,1)
+		"creeper" : randomReward(10,15),
+		"spider" : randomReward(10,15),
+		"cave_spider" : randomReward(10,15),
+		"witch" : randomReward(20,30),
+		"phantom" : randomReward(10,20),
+		"blaze" : randomReward(13,22),
+		"ghast" : randomReward(30,36),
+		"ender_dragon" : randomReward(2000,2000),
+		"piglin" : randomReward(10,30),
+		"zoglin" : randomReward(20,22),
+		"player" : randomReward(50,60)
 	};
 
 	const {
