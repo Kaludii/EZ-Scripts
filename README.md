@@ -2,4 +2,4 @@
 ## Server Scripts for ProtectorsCraft
 
 written in JaveScript
-Creds mostly to [HongyiMC](https://github.com/HongyiMC)
+Credits to [HongyiMC](https://github.com/HongyiMC) and [Weissnix4711](https://github.com/Weissnix4711)
